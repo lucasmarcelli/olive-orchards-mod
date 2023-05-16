@@ -1,0 +1,41 @@
+﻿building_olive_orchard = {
+	building_group = bg_olive_orchards
+	
+	texture = "gfx/interface/icons/building_icons/olive_orchard.dds"
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	production_method_groups = {
+		pmg_base_building_olive_orchard
+		pmg_secondary_building_olive_orchard
+		pmg_harvesting_process_building_olive_orchard
+		pmg_ownership_land_building_olive_orchard
+	}
+
+	required_construction = construction_cost_low
+	
+	terrain_manipulator = farmland_wheat
+}
+
+building_subsistence_olive_orchards = {
+	building_group = bg_subsistence_agriculture
+	texture = "gfx/interface/icons/building_icons/building_subsistence_olive_orchard.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_olive_orchards
+		pmg_home_workshops_building_subsistence_olive_orchards
+		pmg_serfdom_building_subsistence_olive_orchards
+		pmg_ownership_building_subsistence
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+}

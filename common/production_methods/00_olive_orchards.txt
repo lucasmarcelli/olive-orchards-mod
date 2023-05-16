@@ -1,0 +1,221 @@
+﻿pm_tools_disabled_building_olive_orchard = {
+	texture = "gfx/interface/icons/production_method_icons/no_tool_use.dds"
+
+    building_modifiers = {
+        workforce_scaled = {
+            building_output_hardwood_add = 3
+        }
+
+        level_scaled = {
+            building_employment_laborers_add = 150
+        }
+    }
+}
+
+pm_tools_building_olive_orchard = {
+	texture = "gfx/interface/icons/production_method_icons/harvesting_tools.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 2
+			building_input_glass_add = 1
+            building_output_hardwood_add = 5
+            building_output_groceries_add = 3
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -500
+			building_employment_farmers_add = 100
+            building_employment_shopkeepers_add = 150
+		}
+
+		unscaled = {
+			building_shopkeepers_shares_add = 6
+		}
+	}
+}
+
+pm_industrial_olive_oil_press = {
+	texture = "gfx/interface/icons/production_method_icons/steam_powered_threshers.dds"
+
+	pollution_generation = 3
+
+	unlocking_technologies = {
+		vacuum_canning
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods													
+			building_input_tools_add = 3	
+			building_input_coal_add = 2
+            building_input_glass_add = 2
+            building_output_hardwood_add = 8
+            building_output_groceries_add = 10
+            building_output_oil_add = 1
+			building_output_fruit_add = -5
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2000
+            building_employment_shopkeepers_add = 350
+		}
+
+        unscaled = {
+			building_shopkeepers_shares_add = 12
+		}
+	}
+}
+
+pm_simple_farming_building_olive_orchard = {
+	texture = "gfx/interface/icons/production_method_icons/simple_farming.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			building_output_grain_add = 30
+			building_output_fruit_add = 10
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_farmers_add = 700
+			building_employment_clergymen_add = 300
+		}
+	}
+}
+
+pm_soil_enriching_farming_building_olive_orchard = {
+	texture = "gfx/interface/icons/production_method_icons/soil_enriching_farming.dds"
+	
+	unlocking_technologies = {
+		intensive_agriculture
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			building_input_fertilizer_add = 10		
+			
+			# output goods													
+			building_output_grain_add = 30	
+			building_output_fruit_add = 15
+			
+		}
+
+		level_scaled = {
+			# earnings												
+			building_employment_laborers_add = 3850
+			building_employment_farmers_add = 800
+			building_employment_clergymen_add = 300
+		}
+	}
+}
+
+pm_fertilization_building_olive_orchard = {
+	texture = "gfx/interface/icons/production_method_icons/fertilization.dds"
+	
+	unlocking_technologies = {
+		improved_fertilizer
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods													
+			building_input_fertilizer_add = 20				
+			
+			# output goods												   
+			building_output_grain_add = 95
+			building_output_fruit_add = 20
+
+		}
+
+		level_scaled = {
+			# earnings																									
+			building_employment_laborers_add = 3850
+			building_employment_farmers_add = 800
+			building_employment_clergymen_add = 300
+		}
+	}
+}
+
+pm_chemical_fertilizer_building_olive_orchard = {
+	texture = "gfx/interface/icons/production_method_icons/chemical_fertilizers.dds"
+	unlocking_technologies = {
+		nitrogen_fixation
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			building_input_fertilizer_add = 40			
+			
+			# output goods												   
+			building_output_grain_add = 150	
+			building_output_fruit_add = 35
+
+		}
+
+		level_scaled = {
+			# earnings														
+			building_employment_laborers_add = 3500
+			building_employment_farmers_add = 1250
+			building_employment_clergymen_add = 300
+		}
+	}
+}
+
+default_building_subsistence_olive_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { # 85
+			building_output_grain_add = 0.66 
+			building_output_fruit_add = 1.33 # 40
+			building_output_fabric_add = 0.25 # 5
+			building_output_wood_add = 0.75 # 15
+			building_output_services_add = 0.5 # 15
+			building_output_hardwood_add = 0.15
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 4750
+		}
+		
+		unscaled = {
+			building_aristocrats_shares_add = 10
+			building_clergymen_shares_add = 2
+		}
+	}
+}
+
+pm_home_workshops_no_building_subsistence_olive_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/no_home_workshops.dds"
+	unlocking_laws = {
+		law_command_economy
+	}
+	
+	building_modifiers = { # 45
+		unscaled = {
+			building_output_grain_add = 0.33 # 5
+			building_output_fruit_add = 0.60 # 20
+			building_output_fabric_add = 0.25 # 5
+			building_output_wood_add = 0.75 # 15
+			building_output_hardwood_add = 0.1
+		}
+	}					
+}		
+
+pm_home_workshops_building_subsistence_olive_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/home_workshops.dds"
+	disallowing_laws = {
+		law_command_economy
+	}
+
+	building_modifiers = {
+		workforce_scaled = { # 51
+			building_output_clothes_add = 0.5 # 15
+			building_output_furniture_add = 0.5 # 15
+			building_output_liquor_add = 0.7 # 21
+			building_output_hardwood_add = 0.25
+		}
+	}
+}

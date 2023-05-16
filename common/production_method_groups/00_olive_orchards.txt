@@ -1,0 +1,60 @@
+﻿pmg_base_building_olive_orchard = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_simple_farming_building_olive_orchard
+		pm_soil_enriching_farming_building_olive_orchard
+		pm_fertilization_building_olive_orchard
+		pm_chemical_fertilizer_building_olive_orchard
+	}
+}
+
+pmg_secondary_building_olive_orchard = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_secondary
+		pm_fig_orchards
+        pm_vineyards
+	}
+}
+
+pmg_harvesting_process_building_olive_orchard = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_tools_disabled_building_olive_orchard
+		pm_tools_building_olive_orchard
+		pm_industrial_olive_oil_press
+	}
+}
+
+pmg_ownership_land_building_olive_orchard = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned
+		pm_publicly_traded
+		pm_government_run
+		pm_worker_cooperative_farm
+	}
+}
+
+pmg_base_building_subsistence_olive_orchards = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		default_building_subsistence_olive_orchards
+	}
+}
+
+pmg_home_workshops_building_subsistence_olive_orchards = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_home_workshops_no_building_subsistence_olive_orchards
+		pm_home_workshops_building_subsistence_olive_orchards
+	}
+}
+
+pmg_serfdom_building_subsistence_olive_orchards = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_serfdom_no
+		pm_serfdom_building_subsistence_orchards
+	}
+}

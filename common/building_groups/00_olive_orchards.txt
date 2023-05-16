@@ -1,0 +1,7 @@
+﻿bg_olive_orchards = {
+	parent_group = bg_agriculture
+	
+	default_building = building_olive_orchard
+	
+	cash_reserves_max = 25000
+}
